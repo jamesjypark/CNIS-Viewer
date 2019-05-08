@@ -1,9 +1,75 @@
 import React from "react";
+import "./PatientCard.scss";
 
 class PatientCard extends React.Component {
-  state = {};
   render() {
-    return <div>Card</div>;
+    const {
+      patientId,
+      name,
+      village,
+      contact,
+      age,
+      height,
+      weight,
+      parity,
+      duration,
+      medicalHistory,
+      firstDate,
+      preEclampsia,
+      fetalSize,
+      diastolic,
+      systolic,
+      coexistingConditions,
+      secondDate,
+      cmds
+    } = this.props;
+    const requiredFields = [
+      patientId,
+      name,
+      village,
+      contact,
+      age,
+      height,
+      weight,
+      parity,
+      duration,
+      medicalHistory,
+      firstDate,
+      preEclampsia,
+      fetalSize,
+      diastolic,
+      systolic,
+      coexistingConditions,
+      secondDate,
+      cmds
+    ];
+    const filedLabel = [
+      "patientId",
+      "name",
+      "village",
+      "contact",
+      "age",
+      "height",
+      "weight",
+      "parity",
+      "duration",
+      "medicalHistory",
+      "firstDate",
+      "preEclampsia",
+      "fetalSize",
+      "diastolic",
+      "systolic",
+      "coexistingConditions",
+      "secondDate",
+      "cmds"
+    ];
+    return (
+      <div className="PatientCard">
+        {requiredFields.map((field, index) => (
+          <div>{`${filedLabel[index]}: ${field}`}</div>
+        ))}
+      </div>
+    );
   }
 }
 

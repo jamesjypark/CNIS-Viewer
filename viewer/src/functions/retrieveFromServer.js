@@ -5,6 +5,6 @@ export default () => {
     .then(res => res.json())
     .then(res => {
       console.log(res);
-      return res;
+      return "hola";
     });
 };
