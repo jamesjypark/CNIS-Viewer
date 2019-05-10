@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/jamesjypark/CNIS-Viewer/static/css/main.49393767.chunk.css",
-    "main.js": "/jamesjypark/CNIS-Viewer/static/js/main.e0ffdeae.chunk.js",
-    "main.js.map": "/jamesjypark/CNIS-Viewer/static/js/main.e0ffdeae.chunk.js.map",
-    "runtime~main.js": "/jamesjypark/CNIS-Viewer/static/js/runtime~main.4d856cee.js",
-    "runtime~main.js.map": "/jamesjypark/CNIS-Viewer/static/js/runtime~main.4d856cee.js.map",
-    "static/js/2.d6a534e5.chunk.js": "/jamesjypark/CNIS-Viewer/static/js/2.d6a534e5.chunk.js",
-    "static/js/2.d6a534e5.chunk.js.map": "/jamesjypark/CNIS-Viewer/static/js/2.d6a534e5.chunk.js.map",
-    "index.html": "/jamesjypark/CNIS-Viewer/index.html",
-    "precache-manifest.8afe69cee37bd87bb0d4c669e0273c07.js": "/jamesjypark/CNIS-Viewer/precache-manifest.8afe69cee37bd87bb0d4c669e0273c07.js",
-    "service-worker.js": "/jamesjypark/CNIS-Viewer/service-worker.js",
-    "static/css/main.49393767.chunk.css.map": "/jamesjypark/CNIS-Viewer/static/css/main.49393767.chunk.css.map"
+    "main.css": "/CNIS-Viewer/static/css/main.49393767.chunk.css",
+    "main.js": "/CNIS-Viewer/static/js/main.77853738.chunk.js",
+    "main.js.map": "/CNIS-Viewer/static/js/main.77853738.chunk.js.map",
+    "runtime~main.js": "/CNIS-Viewer/static/js/runtime~main.7dc066b8.js",
+    "runtime~main.js.map": "/CNIS-Viewer/static/js/runtime~main.7dc066b8.js.map",
+    "static/js/2.d6a534e5.chunk.js": "/CNIS-Viewer/static/js/2.d6a534e5.chunk.js",
+    "static/js/2.d6a534e5.chunk.js.map": "/CNIS-Viewer/static/js/2.d6a534e5.chunk.js.map",
+    "index.html": "/CNIS-Viewer/index.html",
+    "precache-manifest.5203e14c638390d8f1d0be8104ceb715.js": "/CNIS-Viewer/precache-manifest.5203e14c638390d8f1d0be8104ceb715.js",
+    "service-worker.js": "/CNIS-Viewer/service-worker.js",
+    "static/css/main.49393767.chunk.css.map": "/CNIS-Viewer/static/css/main.49393767.chunk.css.map"
   }
 }
