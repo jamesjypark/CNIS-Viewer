@@ -1,0 +1,17 @@
+.Viewer {
+  background: white;
+  margin-right: auto;
+  margin-top: 5vh;
+
+  .Status {
+    margin-top: 5vh;
+    font-size: 1.2em;
+  }
+
+  .PatientContainer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3vh;
+    align-items: center;
+  }
+}

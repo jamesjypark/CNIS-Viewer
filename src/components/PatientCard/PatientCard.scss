@@ -1,3 +1,21 @@
 .PatientCard {
-  margin: 20px;
+  text-align: left;
+  margin: 1vw;
+  background: white;
+  width: 70vw;
+  padding: 1vw;
+  border-radius: 10px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #087e9c;
+  transition: ease 0.35s;
+  .Name {
+    font-weight: bold;
+    font-size: 1.5em;
+  }
+}
+
+.PatientCard:hover {
+  background: #e6f2f5;
+  transition: ease 0.35s;
 }

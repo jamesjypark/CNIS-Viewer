@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import PatientCard from "../PatientCard/PatientCard";
+import "./Viewer.scss";
 
 class Viewer extends Component {
   constructor(props) {
@@ -49,40 +50,45 @@ class Viewer extends Component {
       coexistingConditions
     } = this.state;
     return (
-      <div className="App">
-        <div> CNIS Patient Viewer </div>
-        <div>{`There are ${patientInfo.length} registered patients`}</div>
-        {patientInfo
-          .filter(patient => patient.name)
-          .map(patient => {
-            let patientMedicalHistory = [];
-            let patientPreEclampsia = [];
-            let patientCoexistingConditions = [];
-            if (medicalHistory) {
-              patientMedicalHistory = medicalHistory
-                .filter(history => history.patientId === patient.patientId)
-                .map(history => history.medicalHistory);
-            }
-            if (preEclampsia) {
-              patientPreEclampsia = preEclampsia
-                .filter(history => history.patientId === patient.patientId)
-                .map(history => history.preEclampsia);
-            }
-            if (coexistingConditions) {
-              patientCoexistingConditions = coexistingConditions
-                .filter(history => history.patientId === patient.patientId)
-                .map(history => history.coexistingConditions);
-              console.log(patientCoexistingConditions);
-            }
-            return (
-              <PatientCard
-                {...patient}
-                medicalHistory={patientMedicalHistory}
-                preEclampsia={patientPreEclampsia}
-                coexistingConditions={patientCoexistingConditions}
-              />
-            );
-          })}
+      <div className="Viewer">
+        <div className="Title">CMDS</div>
+        <div className="Sub-header">Community Maternal Danger Score</div>
+        <div className="Status">{`There are ${
+          patientInfo.length
+        } registered patients in the database`}</div>
+        <div className="PatientContainer">
+          {patientInfo
+            .filter(patient => patient.name)
+            .map(patient => {
+              let patientMedicalHistory = [];
+              let patientPreEclampsia = [];
+              let patientCoexistingConditions = [];
+              if (medicalHistory) {
+                patientMedicalHistory = medicalHistory
+                  .filter(history => history.patientId === patient.patientId)
+                  .map(history => history.medicalHistory);
+              }
+              if (preEclampsia) {
+                patientPreEclampsia = preEclampsia
+                  .filter(history => history.patientId === patient.patientId)
+                  .map(history => history.preEclampsia);
+              }
+              if (coexistingConditions) {
+                patientCoexistingConditions = coexistingConditions
+                  .filter(history => history.patientId === patient.patientId)
+                  .map(history => history.coexistingConditions);
+                console.log(patientCoexistingConditions);
+              }
+              return (
+                <PatientCard
+                  {...patient}
+                  medicalHistory={patientMedicalHistory}
+                  preEclampsia={patientPreEclampsia}
+                  coexistingConditions={patientCoexistingConditions}
+                />
+              );
+            })}
+        </div>
       </div>
     );
   }

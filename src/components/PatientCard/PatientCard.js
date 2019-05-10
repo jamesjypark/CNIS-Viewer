@@ -53,7 +53,7 @@ class PatientCard extends React.Component {
     ];
     const filedLabel = [
       "patientId",
-      "name",
+      // "name",
       "village",
       "contact",
       "age",
@@ -72,13 +72,18 @@ class PatientCard extends React.Component {
       "cmds"
     ];
     return (
-      <div className="PatientCard">
-        {name}
+      <div className="PatientCard" onClick={this.onOpen}>
+        <div className="Name">{name}</div>
         {isOpen &&
-          requiredFields.map((field, index) => (
-            <div>{`${filedLabel[index]}: ${field}`}</div>
-          ))}
-        <div onClick={this.onOpen}>{isOpen ? "Less" : "More"}</div>
+          requiredFields
+            .filter((field, index) => {
+              return index !== 1;
+            })
+            .map((field, index) => (
+              <div>
+                {field !== "undefined" && `${filedLabel[index]}: ${field}`}
+              </div>
+            ))}
       </div>
     );
   }
