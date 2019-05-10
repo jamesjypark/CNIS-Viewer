@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d5f3904bb4eb5a12ff67f9762e2935cd",
+    "revision": "9ed38cad5153118930c82cba5350a5ea",
     "url": "/CNIS-Viewer/index.html"
   },
   {
-    "revision": "fc6668140facfb63fb1c",
+    "revision": "5c86e74091d920ed703c",
     "url": "/CNIS-Viewer/static/css/main.49393767.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/CNIS-Viewer/static/js/2.d6a534e5.chunk.js"
   },
   {
-    "revision": "fc6668140facfb63fb1c",
-    "url": "/CNIS-Viewer/static/js/main.77853738.chunk.js"
+    "revision": "5c86e74091d920ed703c",
+    "url": "/CNIS-Viewer/static/js/main.31c9478b.chunk.js"
   },
   {
     "revision": "a2969a530d291af09602",
