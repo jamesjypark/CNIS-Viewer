@@ -2,6 +2,13 @@ import React from "react";
 import "./PatientCard.scss";
 
 class PatientCard extends React.Component {
+  constructor() {
+    super();
+    this.state = { isOpen: false };
+  }
+  onOpen = () => {
+    this.setState({ isOpen: !this.state.isOpen });
+  };
   render() {
     const {
       patientId,
@@ -23,6 +30,7 @@ class PatientCard extends React.Component {
       secondDate,
       cmds
     } = this.props;
+    const { isOpen } = this.state;
     const requiredFields = [
       patientId,
       name,
@@ -65,9 +73,12 @@ class PatientCard extends React.Component {
     ];
     return (
       <div className="PatientCard">
-        {requiredFields.map((field, index) => (
-          <div>{`${filedLabel[index]}: ${field}`}</div>
-        ))}
+        {name}
+        {isOpen &&
+          requiredFields.map((field, index) => (
+            <div>{`${filedLabel[index]}: ${field}`}</div>
+          ))}
+        <div onClick={this.onOpen}>{isOpen ? "Less" : "More"}</div>
       </div>
     );
   }

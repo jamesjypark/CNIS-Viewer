@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import PatientCard from "../PatientCard/PatientCard";
-// import retrieveFromServer from "../../functions/retrieveFromServer";
 
 class Viewer extends Component {
   constructor(props) {
@@ -8,7 +7,9 @@ class Viewer extends Component {
     this.state = { patientInfo: [] };
   }
   componentWillMount() {
-    const url = "http://192.168.0.13:3000/server.js/";
+    // const url = "http://192.168.0.13:3000/server.js/";
+    const url =
+      "https://cors-anywhere.herokuapp.com/http://ec2-18-219-82-149.us-east-2.compute.amazonaws.com:3000/server.js/";
     fetch(url + "PatientInfo", {
       method: "GET"
     })
