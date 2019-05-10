@@ -7,7 +7,9 @@ class Viewer extends Component {
     super(props);
     this.state = { patientInfo: [] };
   }
+
   componentWillMount() {
+    document.title = "CMDS";
     // const url = "http://192.168.0.13:3000/server.js/";
     const url =
       "https://cors-anywhere.herokuapp.com/http://ec2-18-219-82-149.us-east-2.compute.amazonaws.com:3000/server.js/";
