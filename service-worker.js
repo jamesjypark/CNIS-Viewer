@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/CNIS-Viewer/precache-manifest.00fcf60cb1f45569b874306ddf60134d.js"
+  "/CNIS-Viewer/precache-manifest.c2db0c20c6034822e904592d0c0de755.js"
 );
 
 self.addEventListener('message', (event) => {
